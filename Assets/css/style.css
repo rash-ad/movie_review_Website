@@ -29,7 +29,7 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     
 
-    backdrop-filter:blur(1px);
+    backdrop-filter:blur(10px);
     z-index:999;
 
 
@@ -55,18 +55,35 @@ body{
 
 
 }
+.navbar-container .navbar-menu {
+    display:flex;
+    text-align:center;
+    justify-content: center;
+    gap:1rem;
+    list-style:none;
+    
+}
 .navbar-container .navbar-menu li a {
     font-size:1.3rem;
+    color:#fff;
     text-decoration:none;
     font-weight:500;
     padding:3px 20px;
     border-radius: 20px;;
-
+    border:2px solid transparent;
+    transition: all 0.7s   ease;
+    white-space: no-wrap;
     
-    align-items:center;
-    justify-content: center;
-    list-style:none;
-    text-align:center;
+}
+.avbar-toggle{
+    background:transparent;
+    padding:10px;
+    border:none;
+
+    cursor:pointer;
+    display:none;
+    cursor:pointer;
+
 }
 .logo{
    
