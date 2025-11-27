@@ -2,28 +2,191 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Assets/css/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="index.html" class="navbar-logo">MovieBuzz</a>
 
-            <ul class="navbar-menu">
-                <li><a href="">Home </a></li>
-                <li><a href="">About </a></li>
-                <li><a href="">Trending</a></li>
-                <li><a href="">services </a></li>
-                <li><a href="">Contact</a></li>
-                <input type="text" placeholder="I am looking for...">
-            </ul>
+  <nav class="bg-neutral-primary fixed w-full z-20 top-0 start-0 border-b border-default">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="https://flowbite.com/docs/images/logo.svg" class="h-7" alt="Flowbite Logo" />
+        <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">MovieBuzz</span>
+      </a>
+      <div class="">
+        <div class="">
+          <div class="">
+
+
+            <form action="" class="relative mx-auto w-max">
+              <input type="search"
+                class="peer cursor-pointer relative z-10 h-12 w-12 rounded-full border bg-transparent pl-12 outline-none focus:w-full focus:cursor-text focus:border-lime-300 focus:pl-16 focus:pr-4" />
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="absolute inset-y-0 my-auto h-8 w-12 border-r border-transparent stroke-gray-500 px-3.5 peer-focus:border-lime-300 peer-focus:stroke-lime-500"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </form>
+
+
+          </div>
         </div>
-    </nav>
+      </div>
 
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+          viewBox="0 0 24 24">
+          <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary">
+          <li>
+            <a href="#" class="block py-2 px-3 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Services</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Pricing</a>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+
+
+  
+
+  <div class="bg-gray-100 w-full min-h-screen gap-4 flex-wrap flex justify-center items-center">
+
+    <!-- Card -->
+    <div
+      class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+      <!-- Image -->
+      <img class="h-40 object-cover rounded-xl" h-40 object-cover rounded-xl"
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+        alt="">
+      <div class="p-2">
+        <!-- Heading -->
+        <h2 class="font-bold text-lg mb-2 ">Heading</h2>
+        <!-- Description -->
+        <p class="text-sm text-gray-600">Simple Yet Beautiful Card Design with TaiwlindCss. Subscribe to our Youtube
+          channel for more ...</p>
+      </div>
+      <!-- CTA -->
+      <div class="m-2">
+        <a role='button' href='#' class="text-white bg-purple-600 px-3 py-1 rounded-md hover:bg-purple-700">Learn
+          More</a>
+      </div>
+    </div>
+    <!-- Card -->
+    <div
+      class="w-70 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+      <!-- Image -->
+      <img class="h-40 object-cover rounded-xl" h-40 object-cover rounded-xl"
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+        alt="">
+      <div class="p-2">
+        <!-- Heading -->
+        <h2 class="font-bold text-lg mb-2 heading-card">Heading</h2>
+        <!-- Description -->
+        <p class="text-sm text-gray-600">Simple Yet Beautiful Card Design with TaiwlindCss. Subscribe to our Youtube
+          channel for more ...</p>
+      </div>
+      <!-- CTA -->
+      <div class="m-2">
+        <a role='button' href='#' class="text-white bg-sky-500 px-3 py-1 rounded-md hover:bg-purple-700">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <div
+      class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+      <!-- Image -->
+      <img class="h-40 object-cover rounded-xl" h-40 object-cover rounded-xl"
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+        alt="">
+      <div class="p-2">
+        <!-- Heading -->
+        <h2 class="font-bold text-lg mb-2 ">Heading</h2>
+        <!-- Description -->
+        <p class="text-sm text-gray-600">Simple Yet Beautiful Card Design with TaiwlindCss. Subscribe to our Youtube
+          channel for more ...</p>
+      </div>
+      <!-- CTA -->
+      <div class="m-2">
+        <a role='button' href='#' class="text-white bg-green-500 px-3 py-1 rounded-md hover:bg-purple-700">Learn
+          More</a>
+      </div>
+    </div>
+    <!-- Card -->
+    <div
+      class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+      <!-- Image -->
+      <img class="h-40 object-cover rounded-xl" h-40 object-cover rounded-xl"
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+        alt="">
+      <div class="p-2">
+        <!-- Heading -->
+        <h2 class="font-bold text-lg mb-2 ">Heading</h2>
+        <!-- Description -->
+        <p class="text-sm text-gray-600">Simple Yet Beautiful Card Design with TaiwlindCss. Subscribe to our Youtube
+          channel for more ...</p>
+      </div>
+      <!-- CTA -->
+      <div class="m-2">
+        <a role='button' href='#' class="text-white bg-yellow-500 px-3 py-1 rounded-md hover:bg-purple-700">Learn
+          More</a>
+      </div>
+    </div>
+
+<div
+      class="w-60 p-2 bg-white rounded-xl transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+      <!-- Image -->
+      <img class="h-40 object-cover rounded-xl" h-40 object-cover rounded-xl"
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+        alt="">
+      <div class="p-2">
+        <!-- Heading -->
+        <h2 class="font-bold text-lg mb-2 ">Heading</h2>
+        <!-- Description -->
+        <p class="text-sm text-gray-600">Simple Yet Beautiful Card Design with TaiwlindCss. Subscribe to our Youtube
+          channel for more ...</p>
+      </div>
+      <!-- CTA -->
+      <div class="m-2">
+        <a role='button' href='#' class="text-white bg-yellow-500 px-3 py-1 rounded-md hover:bg-purple-700">Learn
+          More</a>
+      </div>
+    </div>
+
+    
+
+
+  </div>
 
 </body>
 

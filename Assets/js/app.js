@@ -1,7 +1,7 @@
 console.log("Hello World");
 let movieTitle = document.getElementById("movieTitle").value;
 let apikey = "aef35bd9";
-
+let headingCard=document.getElementById('heading-card').value;
  
 movieTitle.addEventListener("keypress", e => {
     if (e.key === "Enter") {
@@ -16,13 +16,10 @@ async function getMovieData() {
     console.log(data);
     displayMovieData(data);
 }
+
 function displayMovieData(data) {
     document.getElementById("movieDetails").innerText = `
-        <h2>${data.Title}</h2>
-        <p><strong>Year:</strong> ${data.Year}</p>
-        <p><strong>Genre:</strong> ${data.Genre}</p>
-        <p><strong>Director:</strong> ${data.Director}</p>
-        <p><strong>Plot:</strong> ${data.Plot}</p>
-        <img src="${data.Poster}" alt="Movie Poster"/>
+        
     `;
+    headingCard.innerText= data.Title;
 }
